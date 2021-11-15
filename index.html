@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batata</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <style>
+    h1 {
+        background: rgb(109, 2, 109);
+        color: #ffcbdb ;
+        text-align: center
+    }
+    
+    p{
+        font-size: 80px;
+        text-align: cente;
+        color: hotpink;
+        text-align: center
+    }
+
+    button{
+        padding: 20px;
+        color: #ff007f;
+        text-align: center 
+
+    }
+
+    body{
+        background: #000000;
+    }
+    div{
+        text-align: center;
+    }
+
+    </style>
+  
+    <h1>Contador</h1>
+    
+    <p id="number">0</p>
+    <div>  
+    <button onclick="subtrair()">Menos</button>
+    <button onclick="somar()">Mais</button>
+</div>
+    <script>
+    const p = document.getElementById("number")
+
+    function somar() {
+        var num = parseInt(p.innerText)
+        num = num + 1
+        p.innerText = num
+    }
+
+    function subtrair() {
+        var num = parseInt(p.innerText)
+        num = num - 1
+        p.innerText = num
+    }
+
+    </script>
+
+
+</body>
+</html>
